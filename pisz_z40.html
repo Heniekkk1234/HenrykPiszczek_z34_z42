@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<meta charset="UTF-8">
+<title>Piszczek Z40</title>
+<body>
+<div style="color:red;font-size:50px;">
+<script language="JavaScript">
+var x=prompt("podaj argument x=","");
+ var x_pis=parseFloat(x);
+ document.write("wykonał Henryk Piszczek <br>");
+ document.write("czytany argument x="+x_pis+"<br>");
+
+ function f_pis(x_pis) {
+ if(x_pis>=2) {return 9;}
+ if((x_pis>=-2) && (x_pis<0)) {return x_pis+1 * x_pis+1;}
+ if((x_pis=>0) && (x_pis<2)) {return x_pis * x_pis * x_pis;}
+ if(x_pis<-2) {return 1;}
+}
+
+ document.write("f("+x_pis+")="+f_pis(x_pis)+"<br>");
+ </script>
+</div>
+</body>
+</html>
+<!-- Piszczek Z40_JS -->

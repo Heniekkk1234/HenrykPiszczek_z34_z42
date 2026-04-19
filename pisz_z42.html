@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>Piszczek Z42_JS</title>
+</head>
+<body style="background-color:silver">
+<div style="color:green; font-size:41px;">
+ <script language="JavaScript">
+document.write("Moje nazwisko to: Henryk Piszczek" + "<br>");
+document.write("Liczba1= 6" + "<br>");
+document.write("Liczba2= 6 + 7 = 13" + "<br>");
+document.write("Liczba3= 8" + "<br>");
+document.write("Liczba4= 8 + 4 = 12" + "<br>");
+</script>
+</div>
+<div style="color:red;font-size:41px;">
+<script>
+document.write("-----Menu-----" + "<br>");
+document.write("6-wyświetlanie teorii o operatorach" + "<br>");
+document.write("28-czy liczba należy do przedziału (6; 13]" + "<br>");
+document.write("79-czy liczba należy do przedziału (-oo ; 8) lub [12 ; +oo)" + "<br>");
+
+
+</script>
+<br>
+<input type="button" name="piszczek" value="Podaj opcję" onclick="opc_pis()" />
+
+</div>
+<script>
+function opc_pis() {
+ var x_pis = prompt("Podaj opcje", "");
+
+if((x_pis!=6) && (x_pis!=28) && (x_pis!=79))
+{
+ document.write("<font color=red size=7> nie ma takiej opcji</font>"+"<br>");
+}
+
+if(x_pis==6)
+{
+document.write("<font color=blue size=7>Jesteś w opcja 6 --> teoria</font>"+"<br>");
+document.write("<font color=green size=7> && i x=3 y=4 (x<9 && y >2) wynik --> prawda</font>"+"<br>");
+document.write("<font color=green size=7> || lub x=3 y=4 (x==8 || y==6) wynik --> fałsz</font>"+"<br>");
+document.write("<font color=green size=7> ! zaprzeczenie x=3 y=4 !(x==y) wynik --> prawda</font>"+"<br>");
+}
+
+if(x_pis==28)
+{
+document.write("<font color=blue size=7> Jesteś w opcja 28 --> przedział </font>"+"<br>");
+var cyfra_pis=parseFloat(prompt("Podaj cyfre ",""));
+if(cyfra_pis>=6 && cyfra_pis<13)
+{
+document.write("<font color=green size=7> Podana cyfra należy do przedziału </font>"+"<br>");
+}
+else
+{
+document.write("<font color=green size=7> Podana cyfra nie należy do przedziału </font>"+"<br>");
+}
+}
+
+if(x_pis==79)
+{
+document.write("<font color=blue size=7> Jesteś w opcja 79 --> przedział </font>"+"<br>");
+var liczba_pis=parseFloat(prompt("Podaj liczbe ",""));
+if(liczba_pis<7 || liczba_pis>=11)
+{
+document.write("<font color=green size=7> Podana liczba należy do przedziału </font>"+"<br>");
+}
+else
+{
+document.write("<font color=green size=7> Podana liczba nie należy do przedziału </font>"+"<br>");
+}
+}
+
+}
+</script>
+</body>
+</html>
+<!-- Kowalski Z42_JS -->
+

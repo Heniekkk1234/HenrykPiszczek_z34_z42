@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> Piszczek Z38_JS </title>
+
+<style> 
+ #demo_piszczek {
+ color: red;
+ font-size: 40px;
+ }
+</style>
+
+</head>
+ <body>
+ <center> <div style="color: red; font-size: 1cm;"> Piszczek </div> </center> <br>
+ <div style="color: green; font-size: 12mm;"> Pojęcie rozdzielczość ekranu/monitora oznacza liczbę pikseli (punktów obrazu), które mogą być wyświetlane na ekranie, zwykle podawaną jako szerokość × wysokość. </div> <br>
+<div style="color: blue; font-size: 50px;"> Pojęcie szerokość/wysokość ekranu przeglądarki w pikselach oznacza liczbę pikseli dostępnych w oknie przeglądarki, w których wyświetlana jest strona internetowa. </div> <br>
+<p id="demo_piszczek"> </p>
+<script>
+ var w = window.innerWidth;
+ var h = window.innerHeight;
+ var x = document.getElementById("demo_piszczek");
+ x.innerHTML = "szerokość przeglądarki: " + w + ", wysokość: " + h + ".";
+ document.write("<font color=silver size=6>Twoja rozdzielczość ekranu to:</font>");
+ document.write("<font color=silver size=6>"+screen.width+"</font>");
+ document.write("<font color=silver size=6> na </font>");
+ document.write("<font color=silver size=6>"+screen.height+"</font>");
+ </script>
+ </body>
+</html>
+<!-- Piszczek Z38_JS -->
